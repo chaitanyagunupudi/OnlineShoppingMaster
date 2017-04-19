@@ -1,0 +1,20 @@
+<HTML>
+<HEAD><SCRIPT language=JavaScript>
+<!-- http://www.spacegun.co.uk -->
+	var message = "web Page disabled"; 
+	function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ 	alert(message); return false; } 
+	if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { 	alert(message); 	return false; } } 
+	document.onmousedown = rtclickcheck;
+
+
+</SCRIPT>
+<TITLE> e-shopping </TITLE>
+</HEAD>
+<FRAMESET ROWS="21%,*" border="0" noresize>
+	<FRAME SRC="upper.html" NAME="f1" scrolling="no">
+	<FRAMESET COLS="18%,*" border="0" noresize>
+		<FRAME SRC="left.html" NAME="f2">
+		<FRAME SRC="right.html" NAME="f3">
+	</FRAMESET>
+</FRAMESET>
+</HTML>

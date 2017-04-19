@@ -1,0 +1,1 @@
+insert into emp_det values(&eno,'&ename''&fname',to_date('&dob','dd-mm-yy'),to_date('&date_of_join','dd-mm-yy'),&sal,'&pwd','&gender','&e_desig','&E_qual','&e_addr','&phone');

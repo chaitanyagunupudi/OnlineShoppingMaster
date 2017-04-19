@@ -1,0 +1,86 @@
+conn system/javasoft;
+
+create user eshop identified by eshop;
+
+grant resource,connect to eshop;
+
+disconn;
+
+conn eshop/eshop;
+
+create table emp_det(
+eno number(4) primary key,
+ename varchar2(15),
+fname varchar2(15),
+dob date,
+date_of_join date,
+sal number(12,2),
+pwd varchar2(10),
+gender varchar2(5),
+e_desig varchar2(10),
+e_qual varchar2(5),
+e_addr varchar2(20),
+phone varchar2(12));
+/
+
+create table prod_det(
+p_code varchar2(5) primary key,
+p_name varchar2(10),
+p_price number(10,2),
+min_stock number(5),
+present_stock number(5));
+
+/
+create table sales_det(
+p_code varchar2(5),
+P_name varchar2(10),
+p_qty number(4),
+p_price number(5),
+s_date date);
+
+
+/
+
+
+create table purchase_det(
+p_code varchar2(5),
+P_name varchar2(10),
+p_qty number(4),
+p_price number(5),
+pursc_date date);
+
+
+/
+
+create table user_det(
+   name varchar2(20),
+   uname varchar2(20),
+   pwd varchar2(20),
+   gender varchar2(5),
+   phone varchar2(15),
+  address varchar2(150),
+   pin varchar2(10)
+);
+
+/
+
+create table suggest(
+name varchar2(15),
+phone varchar2(10),
+emailid varchar2(15),
+address varchar2(20),
+advice varchar2(300));
+
+
+/
+
+create table orders(
+pcode varchar2(5),
+name varchar2(10),
+pqty number(5),
+price number(12,2),
+total number(12,2),
+id varchar2(30),
+usr varchar2(20),
+odate date);
+

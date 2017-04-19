@@ -1,0 +1,38 @@
+<HTML>
+<Head><SCRIPT language=JavaScript>
+<!-- http://www.spacegun.co.uk -->
+	var message = "web Page disabled"; 
+	function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ 	alert(message); return false; } 
+	if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { 	alert(message); 	return false; } } 
+	document.onmousedown = rtclickcheck;
+
+
+</SCRIPT><FONT  face="comic sans ms" size=3 COLOR=#006600><center><hr color=#99CC00>Registration Form<hr color=#99CC00></CENTER></font></head>
+
+<BODY BGCOLOR>
+<form method="get" action="client_jsp.jsp">
+ 
+<p><font face="Comic Sans MS" color="#008000" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="T1" size="20" maxlength=20>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Gender:&nbsp;&nbsp;&nbsp;&nbsp; <select size="1" name="D1">
+    <option>Male</option>
+    <option>Female</option>
+  </select></font></p>
+  <p><font face="Comic Sans MS" color="#008000" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  UserId:&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="T2" size="20" maxlength=20>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="T4" size="20" maxlength=15>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+  <p><font face="Comic Sans MS" color="#008000" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Password:&nbsp; <input type="password" name="T3" size="20" maxlength=20>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Pin Code:&nbsp; <input type="text" name="T5" size="20" maxlength=10></font></p>
+  <p><font face="Comic Sans MS" color="#008000" size="2" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Address:</font></p>
+  <p><font face="Comic Sans MS" color="#008000" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <textarea rows="3" name="S1" cols="24" maxlength=150></textarea></font></p>
+  <p>&nbsp;&nbsp; <font face="Comic Sans MS" color="#008000" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="Submit" value="Submit" name="B1"></p>
+
+</form>
+
+</BODY>
+</HTML>
